@@ -1,5 +1,18 @@
 install 1.7 : https://stackoverflow.com/a/27658032
 
+sudo visudo (search for NOPASSWD - add for centos)
+sudo vi /etc/hostname
+sudo vi /etc/hosts
+sudo hostname ${hostname}
+sudo su
+
+yum update
+yum install ntp
+timedatectl list-timezones | grep Asia
+timedatectl set-timezone America/Chicago
+
+#############################################################################################################
+
 
 nginx.repo
 $$$$$$$$$$
